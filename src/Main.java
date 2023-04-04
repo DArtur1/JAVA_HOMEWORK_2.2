@@ -1,18 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        int InitialAmount = 100;
-        int RefillAmount = 3100;
-        boolean IsMore = RefillAmount > 1000;
+        int initialAmount = 100;
+        int refillAmount = 3100;
+        boolean isMore = refillAmount > 1000;
 
-        /* int BonusAmount;
-        if (IsMore) {
-            BonusAmount = RefillAmount / 100;
+        /* int bonusAmount;
+        if (isMore) {
+            bonusAmount = refillAmount / 100;
         } else {
-            BonusAmount = 0;
+            bonusAmount = 0;
         } */
 
-        int BonusAmount = IsMore ? RefillAmount / 100 : 0;
-        int TotalAmount = InitialAmount + RefillAmount + BonusAmount;
-        System.out.println("Сумма пополнения = " + TotalAmount);
+        int bonusAmount = isMore ? refillAmount / 100 : 0;
+        int totalAmount = initialAmount + refillAmount + bonusAmount;
+        System.out.println("Сумма пополнения = " + totalAmount);
     }
 }
